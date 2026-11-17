@@ -13,14 +13,13 @@ public class Transport {
         coordinates = _coordinates;
     }
 
-    public void getValues() {
-        String info = "Speed: " + speed + "\nWeight: " + weight + "\Color: " + color;
+    public String getValues() {
+        String info = "Speed: " + speed + "\nWeight: " + weight + "Color: " + color;
         String infoCoordinates = "Coordinates: \n";
 
         for (byte el : coordinates) {
             infoCoordinates += el + '\n';
-
-        return info + infoCoordinates;
         }
+        return info + infoCoordinates;
     }
 }
